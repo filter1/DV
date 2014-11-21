@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xsl" href="ascii.xsl" ?>
+
+ <root>
+      <childX>
+               <childY1/>
+               		<childZ/>
+               <childY2/>
+      </childX>
+      <childX>
+               <childY1/>
+               <childY2/>
+      </childX>
+      <childX2/>
+ </root>

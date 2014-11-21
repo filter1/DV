@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE weatherforcast [
+        <!ELEMENT next-three-days   (one-day , one-day , one-day)>
+        <!ELEMENT one-day           (date, temparature-max, temparature-min, morning, afternoon, evening, sun-houres, rain-chance)>
+        <!ELEMENT date            	(#PCDATA)>
+        <!ELEMENT temparature-min	(#PCDATA)>
+        <!ELEMENT temparature-max	(#PCDATA)>
+        <!ELEMENT sun-houres 		(#PCDATA)>
+        <!ELEMENT rain-chance 		(#PCDATA)>
+        <!ELEMENT morning			(#PCDATA)>
+        <!ELEMENT afternoon			(#PCDATA)>
+        <!ELEMENT evening			(#PCDATA)>
+        <!ELEMENT weatherforcast 	(next-three-days)>
+]>
+
+<weatherforcast>
+ 	<next-three-days>
+ 		<one-day>
+ 			<date>13.11
+ 			</date>
+ 			<temparature-max>
+ 				12
+ 			</temparature-max>
+ 			<temparature-min>
+ 				7
+ 			</temparature-min>
+ 			<morning>
+ 				Gut
+ 			</morning>
+ 			<afternoon>
+ 				Schlecht
+ 			</afternoon>
+ 			<evening>
+ 				Gut
+ 			</evening>
+ 			<sun-houres>
+ 				0
+ 			</sun-houres>
+ 			<rain-chance>
+ 				30
+ 			</rain-chance>
+ 		</one-day>
+ 		<one-day>
+ 			<date>13.11
+ 			</date>
+ 			<temparature-max>
+ 				13
+ 			</temparature-max>
+ 			<temparature-min>
+ 				8
+ 			</temparature-min>
+ 			<morning>
+ 				Gut
+ 			</morning>
+ 			<afternoon>
+ 				Schlecht
+ 			</afternoon>
+ 			<evening>
+ 				Gut
+ 			</evening>
+ 			<sun-houres>
+ 				2
+ 			</sun-houres>
+ 			<rain-chance>
+ 				20
+ 			</rain-chance>
+ 		</one-day>
+ 		 <one-day>
+ 			<date>13.11
+ 			</date>
+ 			<temparature-max>
+ 				12
+ 			</temparature-max>
+ 			<temparature-min>
+ 				8
+ 			</temparature-min>
+ 			<morning>
+ 				Gut
+ 			</morning>
+ 			<afternoon>
+ 				Schlecht
+ 			</afternoon>
+ 			<evening>
+ 				Gut
+ 			</evening>
+ 			<sun-houres>
+ 				1
+ 			</sun-houres>
+ 			<rain-chance>
+ 				60
+ 			</rain-chance>
+ 		</one-day>
+ 	</next-three-days>
+</weatherforcast>

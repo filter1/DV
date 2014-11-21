@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Landkreise.xsl" ?>
+
+<!DOCTYPE land [
+        <!ELEMENT land     (kreis|stadt)*>
+        <!ELEMENT kreis            (name)>
+        <!ELEMENT stadt            (name)>
+        <!ELEMENT name          (#PCDATA)>
+        <!ATTLIST kreis kfz    CDATA #REQUIRED>
+
+        <!-- I don't think you got this right. ;) -->
+        <!ATTLIST stadt kreis  CDATA #REQUIRED>
+
+        <!-- Angaben zur geografischen Laenge und Breite (dezimaler
+Form) -->
+        <!ATTLIST stadt breite CDATA #REQUIRED>
+        <!ATTLIST stadt laenge CDATA #REQUIRED>
+]>
+
+<land>
+        <kreis kfz="SDL">
+                <name>Stendal</name>
+        </kreis>
+        <kreis kfz="SAW">
+                <name>Salzwedel</name>
+        </kreis>
+         <kreis kfz="ABI">
+                <name>Anhalt-Bitterfeld</name>
+        </kreis>
+        <kreis kfz="BÖ">
+                <name>Börde</name>
+        </kreis>
+        <kreis kfz="BLK">
+                <name>Burgenlandkreis</name>
+        </kreis>
+        <kreis kfz="HZ">
+                <name>Harz</name>
+        </kreis>
+        <kreis kfz="JL">
+                <name>Jerichower Land</name>
+        </kreis>
+        <kreis kfz="MSH">
+                <name>Mansfeld-Südharz</name>
+        </kreis>
+        <kreis kfz="SK">
+                <name>Saalekreis</name>
+        </kreis>
+        <kreis kfz="SLK">
+                <name>Salzlandkreis</name>
+        </kreis>
+        <kreis kfz="WB">
+                <name>Wittenberg</name>
+        </kreis>
+
+        <stadt kreis="ist kreisfrei" breite="51.8083" laenge="12.241">
+                        <name>Dessau-Roßlau</name>
+                </stadt>
+                <stadt kreis="ist kreisfrei" breite="51.4348"
+laenge="11.9814">
+                        <name>Halle (Saale)</name>
+                </stadt>
+                <stadt kreis="ist kreisfrei" breite="52.156"
+laenge="11.5789">
+                        <name>Magdeburg</name>
+                </stadt>
+</land>

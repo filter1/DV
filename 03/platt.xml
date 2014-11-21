@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="platt.xsl" ?>
+
+<person>
+	<name>
+		<given_name>Katrin</given_name>
+		<surname>Krieger</surname>
+		<title>M.A.</title>
+	</name>
+	<contactdata>
+		<email>katrin.krieger@ovgu.de</email>
+		<office>
+			<building>G29</building>
+			<room>016</room>
+		</office>
+		<phone type="office">0391-67 12510</phone>
+	</contactdata>
+	<organization>
+		<group>Knowledge Based Systems and Language Processing</group>
+		<department>Computer Science</department>
+	</organization>
+</person>

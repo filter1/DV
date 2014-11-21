@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="disco.xsl" ?>
+<?xml-stylesheet type="text/css2" href="jbalbum.css"?>
+
+<!-- Example  -->
+<discography xmlns:edi="http://ecommerce.example.org/schema">
+<album>
+  <artist>Jackson Browne</artist>
+  <title>Late for the sky</title>
+  <tracklist>
+    <track>Late for the sky</track>
+    <track>Fountain of sorrow</track>
+    <track>Farther on</track>
+    <track>The late show</track>
+    <track>The road and the sky</track>
+    <track>For a dancer</track>
+    <track>Walking slow</track>
+    <track>Before the deluge</track>
+  </tracklist>
+  <label>Elektra/Asylum</label>
+  <year>1974</year>
+  <edi:price units='Euro'>32.18</edi:price>
+ </album>
+</discography>
