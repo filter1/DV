@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="ggt.xsl" ?>
+
+<ggT>
+   <input>
+      <n1>100</n1>
+      <n2>24</n2>
+   </input>
+</ggT>
