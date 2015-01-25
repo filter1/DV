@@ -1,0 +1,41 @@
+1.)
+Entitäten
+
+Dax
+Deutsche Bnk
+Post
+	rote Zahlen
+Pennystock
+Deutsche Börse
+Daimler
+BMW
+Mentor
+	Kalefornieren
+
+Radlerin
+	Alkoholisiert
+	ohne eingeschaltet Beleuchtung
+	40 Jahre
+Polizeibeamte
+
+Hallenser
+	50 Jahre
+	Alkohol
+
+Täter
+	Unbekannt
+
+Täter
+
+2)
+In Text2: Die meisten Entitäten sind kriminell. Werden von anderen Entitäten, Polizei, kontakiert.
+In Text1: Es sind Unternehmen, die an der Börse gehandelt werden.
+
+3)
+Text2:
+fest nehmen
+gestohlen
+
+Text1:
+Finanzvorstand
+Gespräch zwecks Partnerschaft

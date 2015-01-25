@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="pub.xsl" ?>
+
+<Publications>
+	<Proceedings>
+		<Conference>
+			1. Conference
+		</Conference>
+		<Year>
+			1. Year
+		</Year>
+		<Location>
+			1. Location.
+		</Location>
+		<Article>
+			<title>
+				1. Title
+			</title>
+			<Author>
+				<Firstname>
+					1.1. Firstname
+				</Firstname>
+				<Surname>Suciu</Surname>
+			</Author>
+			<Author>
+				<Firstname>
+					1.2. Firstname
+				</Firstname>
+				<Surname>
+					1.2. Surname
+				</Surname>
+			</Author>
+		</Article>
+	</Proceedings>
+
+	<Proceedings>
+		<Conference>
+			2. Conference
+		</Conference>
+		<Year>
+			2. Year
+		</Year>
+		<Location>
+			2. Location.
+		</Location>
+		<Article Reference="A2">
+			<title>
+				2. Title
+			</title>
+			<Author>
+				<Firstname>
+					2.1. Firstname
+				</Firstname>
+				<Surname>
+					2.2. Surname
+				</Surname>
+			</Author>
+		</Article>
+	</Proceedings>
+
+	<Proceedings>
+		<Conference>
+			3. Conference
+		</Conference>
+		<Year>
+			3. Year
+		</Year>
+		<Location>
+			3. Location.
+		</Location>
+		<Article>
+			<title>
+				3. Title
+			</title>
+			<Author>
+				<Firstname>
+					3.1. Firstname
+				</Firstname>
+				<Surname>
+					3.2. Surname
+				</Surname>
+			</Author>
+			<Author>
+				<Firstname>
+					3.1. Firstname
+				</Firstname>
+				<Surname>
+					3.2. Surname
+				</Surname>
+			</Author>
+		</Article>
+	</Proceedings>
+</Publications>

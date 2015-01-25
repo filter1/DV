@@ -1,0 +1,3 @@
+for $x in doc("recipes.xml")/rcp:collection/rcp:title
+order by $x
+return $x

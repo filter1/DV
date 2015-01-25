@@ -1,0 +1,70 @@
+<!ELEMENT Universität (Fachbereich+,Gebäude+)>
+<!ELEMENT Fachbereich (Lehrstuhl+,Dekan)>
+<!ATTLIST Fachbereich Name CDATA #REQUIRED                     
+                     FbNr ID #REQUIRED>
+<!ELEMENT Dekan EMPTY>
+<!ATTLIST Dekan Prof Ref IDREF #REQUIRED>
+<!ELEMENT Lehrstuhl (Bezeichnung,Professor+,Mitarbeiter*)>
+<!ELEMENT Professor (Titel+,Name,Vorlesung+)>
+<!ATTLIST Professor ProfNr ID #REQUIRED
+                     RaumRef IDREF #IMPLIED>
+<!ELEMENT Titel (#PCDATA)>                                    
+<!ELEMENT Name (Vorname+,Nachname)>                           
+<!ELEMENT Vorname (#PCDATA)>
+<!ELEMENT Nachname (#PCDATA)>
+<!ELEMENT Vorlesung (Bezeichnung, Termin+)>
+<!ATTLIST Vorlesung VorlNr ID #REQUIRED>
+<!ELEMENT Bezeichnung (#PCDATA)>
+<!ELEMENT Termin EMPTY>
+<!ATTLIST Termin Wochentag CDATA #REQUIRED
+                 Uhrzeit CDATA #REQUIRED
+                 RaumRef IDREF #REQUIRED>
+<!ELEMENT Mitarbeiter (Name, betreut*)>
+<!ATTLIST Mitarbeiter    MaNr ID #REQUIRED
+                         Abschluss CDATA #IMPLIED
+                         RaumRef IDREF #IMPLIED>
+<!ELEMENT betreut EMPTY>
+<!ATTLIST betreut VorlRef IDREF #REQUIRED>
+
+<!ELEMENT Gebäude (Raum)>
+<!ATTLIST Gebäude GebNr ID #REQUIRED>
+
+<!ELEMENT Raum EMPTY>
+<!ATTLIST Raum   Raum Nr ID #REQUIRED
+                 Fläche CDATA #IMPLIED
+                 Plätze CDATA #IMPLIED>
+
+<Universität>
+	<Fachbereich>
+		<Lehrstuhl>
+			<Bezeichnung>
+			</Bezeichnung>
+			<Professor>
+				<Name>
+					<Nachname>
+					</Nachname>
+				</Name>
+				<Vorlesung>
+					<Bezeichnung>
+					</Bezeichnung>
+					<Termin>
+					</Termin>
+				</Vorlesung>
+			</Professor>
+			<Mitarbeiter>
+			</Mitarbeiter>
+
+		</Lehrstuhl>
+		<Dekan>
+		</Dekan>
+	</Fachbereich>
+	<Gebäude>
+		<Raum>
+		</Raum>
+	</Gebäude>
+</Universität>
+
+a) //Lehrstuhl[Bezeichnung = 'Philosophie']/Professor
+b) //Vorlesung[Termin/@Wochentag = "Donnerstag" AND ../../Bezeichnung = "Anorganische Chemie"]/Bezeichnung
+c) //Vorlesung/Bezeichnung[../../../Mitarbeiter/betreut/@VorlRef = ../@VorlNr]
+d) //Vorlesung[Termin/@Wochentag = //Vorlesung[@VorlNr = "Vorl-13-002"]/Termin/@Wochentag AND Termin/@Uhrzeit = //Vorlesung[@VorlNr = "Vorl-13-002"]/Termin/@Uhrzeit/Termin/@Wochentag] 

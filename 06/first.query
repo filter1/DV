@@ -1,0 +1,37 @@
+declare namespace rcp = "http://www.brics.dk/ixwt/recipes";
+<results>
+{ for $x in /rcp:collection/rcp:recipe
+order by xs:integer($x/rcp:nutrition/@calories)
+return 
+<recipe> 
+<name> { $x/rcp:title/text() } </name>
+<calories> {  data($x/rcp:nutrition/@calories) } </calories>
+</recipe >
+}
+</results>
+
+(:
+<?xml version="1.0" encoding="UTF-8"?>
+<results>
+   <recipe>
+      <name>Ricotta Pie</name>
+      <calories>349</calories>
+   </recipe>
+   <recipe>
+      <name>Linguine Pescadoro</name>
+      <calories>532</calories>
+   </recipe>
+   <recipe>
+      <name>Zuppa Inglese</name>
+      <calories>612</calories>
+   </recipe>
+   <recipe>
+      <name>Beef Parmesan with Garlic Angel Hair Pasta</name>
+      <calories>1167</calories>
+   </recipe>
+   <recipe>
+      <name>Cailles en Sarcophages</name>
+      <calories>8892</calories>
+   </recipe>
+</results>
+:)
